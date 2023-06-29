@@ -417,62 +417,83 @@ transition: .5s;
 }
 
 /*SECCION CONTACTO*/
-#contacto{
-    padding: 100px 15px;
+.contenido-seccion{
+    max-width: 1100px;
+    padding: 100px 0;
+    margin: auto;
 }
 
-#contacto .titulo-seccion{
+.contenido-seccion h2{
     margin-bottom: 20px;
     text-align: center;
-    font-size: 24px;
+    font-size: 22px;
     text-transform: uppercase;
-    color: #000;
+    color: black;
     text-decoration: underline;
     text-decoration-color: #e9a1eb;
-    text-decoration-thickness: 5px;
+    text-decoration-thickness: 5px;    
 }
 
-.contenedor-form{
-    max-width: 1000px;
+.contacto .contenido-seccion{
+    max-width: 1100px;
     margin: auto;
 }
 
-.contenedor-form .fila-mitad .input-mitad{
-    display:inline-flex;
-    justify-content:space-between;
-    margin-bottom: 18px;
-    width: 40%;
+.contacto .fila{
+    display: flex;
 }
 
-.contenedor-form input, textarea{
-    padding: 20px;
-    border-radius: 20px;
-    border: none;
-    border: 1px solid #b575aa;
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
 }
 
-.contenedor-form .fila{
-    margin-bottom: 12px;
-}
-.contenedor-form .input-full{
-    width: 100%;
-}
-
-.btn-enviar{
+.contacto .col input, .contacto .col textarea{
     display: block;
-    margin: auto;
-    cursor: pointer;
-    transition: .5s;
-    padding: 10px 15px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.btn-enviar:hover{
-    background-color: #b575aa;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
     color: #fff;
+    font-size: 18px;
 }
 
+.contacto button{
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 1px solid #3d3d3d;
+    margin: 20px auto;
+    transition: .5s;
+    position: relative;
+}
+
+button:hover{
+    background-color: rgb(133, 101, 162);
+    color: azure;
+}
+
+.info ul{
+    list-style: none;
+}
+
+.info ul li{
+    margin-bottom: 20px;
+}
+
+.info ul li i{
+    color:#b96ed0;
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+/*FOOTER*/
 footer{
     background-color: #000;
     color: #fff;
@@ -480,14 +501,31 @@ footer{
     padding: 30px 0;
 }
 
-footer a{
-    text-decoration: none;
-    color: #b96ed0;
-    display: inline-block;
-    margin: 5px;
-    font-size: 26px;
+footer .redes{
+    margin-bottom: 20px;
 }
 
+footer .redes a{
+    text-decoration: none;
+    color: beige;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 1rem;
+    transition: .5s;
+}
+
+footer .redes a:hover{
+    color: rgb(189, 146, 228);
+}
+
+footer .arriba a:hover{
+    color: rgb(189, 146, 228);
+}
 /*SECCION RESPONSIVE*/
 @media screen and (max-width: 800px){
     .redes{
@@ -558,16 +596,12 @@ margin: 10px auto;
 #portafolio .fila .proyecto{
     margin: 10px auto;
 }
-#contacto{
-    padding: 50px 15px;
-}
-#contacto .contenedor-form .mitad{
-    margin-bottom: 15px;
+.contacto .fila{
     display: block;
 }
-#contacto .contenedor-form .mitad input{
-width: 100%;
-margin-bottom: 15px;
+
+.contacto .fila .col{
+    width: 100%;
 }
 
 }
